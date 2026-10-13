@@ -128,6 +128,16 @@ h1 em, h2 em { font-family: Georgia, "Times New Roman", serif; font-weight: 400;
 .visual-bloom { background: #eeded2; display: grid; place-items: center; }
 .bloom-grid { position: absolute; inset: 0; background-image: linear-gradient(#c7868036 1px, transparent 1px), linear-gradient(90deg, #c7868036 1px, transparent 1px); background-size: 35px 35px; }
 .bloom-flower { position: relative; font-size: 15rem; line-height: 1; color: #de8d78; text-shadow: 16px 18px 0 #a9b8a7; transform: rotate(-14deg); }
+.visual-cezari { background: radial-gradient(circle at 70% 30%, #57659c, #222d52 65%, #18203b); color: #eff3ff; display: grid; place-items: center; }
+.visual-cezari::before { content: ""; position: absolute; width: 290px; height: 290px; border: 1px solid #ffffff30; border-radius: 50%; box-shadow: 0 0 0 55px #ffffff0b, 0 0 0 110px #ffffff08; }
+.cezari-window { position: relative; width: min(78%, 370px); height: 210px; border: 1px solid #aab9e877; border-radius: 10px; background: #131c34; box-shadow: 18px 24px 35px #0b112953; transform: rotate(-4deg); overflow: hidden; }
+.cezari-window-bar { height: 38px; display: flex; align-items: center; gap: 6px; padding: 0 14px; background: #2b385a; border-bottom: 1px solid #ffffff22; }
+.cezari-window-bar span { width: 7px; height: 7px; border-radius: 50%; background: #a8b3d0; }
+.cezari-window-bar span:first-child { background: #ef9980; }
+.cezari-window-bar b { margin-left: 13px; font: 600 .7rem ui-monospace, monospace; color: #dce4fa; }
+.cezari-terminal { display: grid; gap: 14px; padding: 27px 23px; color: #bfe2d6; font: 500 .82rem ui-monospace, SFMono-Regular, Consolas, monospace; }
+.cezari-terminal span:nth-child(2) { color: #e4bcae; }
+.cezari-cursor { animation: blink 1.15s step-end infinite; }
 .project-info { display: flex; justify-content: space-between; gap: 15px; padding: 28px 13px 0; }
 .project-type { text-transform: uppercase; color: #d5765a; font-size: .67rem; font-weight: 770; letter-spacing: .12em; }
 .project-info h3 { font-size: 1.85rem; letter-spacing: -.04em; margin: 12px 0 10px; }
